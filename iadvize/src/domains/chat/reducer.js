@@ -1,24 +1,19 @@
-import {
-  PUSH_MESSAGE
-} from './constants';
+import { PUSH_MESSAGE } from './constants';
 
 const initialState = {
   messages: [],
-}
+};
 
 const chat = (state = initialState, action) => {
   switch (action.type) {
     case PUSH_MESSAGE:
       return {
         ...state,
-        messages: [
-          ...state.messages,
-          action.payload,
-        ]
-      }
+        messages: [...state.messages, action.payload],
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default chat
+export default chat;

@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Chatbox />
-        <Chatbox />
+        <Chatbox author="Foo" />
+        <Chatbox author="Bar" />
       </div>
     );
   }
